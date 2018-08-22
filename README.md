@@ -3,7 +3,7 @@ A calculus library for javascript and NPM. Created by [Blake Sanie](http://www.b
 # Install
     $ npm install calculess
 # Getting Started
-Import package and create Calc object for future use
+Import and initialize package
 ```javascript
 var Calculess = require('calculess');
 var Calc = Calculess.prototype;
