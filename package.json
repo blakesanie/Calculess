@@ -1,0 +1,11 @@
+{
+  "name": "calculess",
+  "version": "1.0.0",
+  "description": "calculus, but less",
+  "main": "lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Blake Sanie <blakesanie@gmail.com> (http://www.blakesanie.com)",
+  "license": "ISC"
+}
