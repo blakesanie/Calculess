@@ -6,7 +6,7 @@ A calculus library for javascript and NPM. Created by [Blake Sanie](http://www.b
 Import package and create Calc object for future use
 ```javascript
 var Calculess = require('calculess');
-var Calc = new Calculess();
+var Calc = Calculess.prototype;
 ```
 # Documentation
 ## Limits
@@ -16,11 +16,11 @@ Calc.limAt( x , function );
 ```
 Evaluate a limit from the left
 ```javascript
-Calc.limFromLeft( x , function );
+Calc.limLeftOf( x , function );
 ```
 Evaluate a limit from the right
 ```javascript
-Calc.limFromRight( x , function );
+Calc.limRightOf( x , function );
 ```
 ### Methods:
 * Accept **±Infinity** as x value (parameter)
@@ -33,8 +33,8 @@ function recip(x) {
     return 1 / x;
 }
 
-Calc.limFromLeft(0, recip); // -Infinity
-Calc.limFromRight(0, recip); // Infinity
+Calc.limLeftOf(0, recip); // -Infinity
+Calc.limRightOf(0, recip); // Infinity
 Calc.limAt(0, recip); // NaN
 Calc.limAt(1, recip); // 1
 ```

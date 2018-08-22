@@ -1,11 +1,13 @@
-var Calc = require('./calculus');
-var Calc = new Calc();
+var Calc = require('./lib');
+var Calc = Calc.prototype;
 
-console.log(Calc.integral(0, Math.PI, sin, 5));
-console.log(Calc.integral(0, Math.PI, sin, 10));
-console.log(Calc.integral(0, Math.PI, sin, 100));
-console.log(Calc.integral(0, Math.PI, sin, 1000));
-console.log(Calc.integral(0, Math.PI, sin, 10000));
+console.log(Calc.limRightOf(0,exp));
+console.log(Calc.limLeftOf(0,exp));
+console.log(Calc.limAt(0,exp));
+console.log(Calc.deriv(1,sin));
+console.log(Calc.nthDeriv(2,1,sin));
+console.log(Calc.integral(1,3,sin,1000));
+console.log(Calc.averageValue(1,3,sin,1000));
 
 function exp(x) {
     return 1 / x;

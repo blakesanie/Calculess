@@ -1,11 +1,27 @@
 {
   "name": "calculess",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "calculus, but less",
   "main": "lib.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Blake Sanie <blakesanie@gmail.com> (http://www.blakesanie.com)",
-  "license": "ISC"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blakesanie/Calculess.git"
+  },
+  "keywords": [
+    "calculus",
+    "derivative",
+    "limit",
+    "integral",
+    "optimize",
+    "riemann"
+  ],
+  "bugs": {
+    "url": "https://github.com/blakesanie/Calculess/issues"
+  },
+  "homepage": "https://github.com/blakesanie/Calculess#readme"
 }

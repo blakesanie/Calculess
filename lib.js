@@ -96,11 +96,10 @@ module.exports = class Calc {
         var y2 = func(x2);
         var slope1 = this.slope(x0, y0, x1, y1);
         var slope2 = this.slope(x1, y1, x2, y2);
-        if (Math.abs(slope1 - slope2) > 0.000000000000001) {
+        if (Math.abs(slope1 - slope2) > 0.1) {
             return NaN;
-        } else {
-            return (slope1 + slope2) / 2;
         }
+        return (slope1 + slope2) / 2;
     }
 
     nthDeriv(n, x1, func) {
@@ -139,8 +138,8 @@ module.exports = class Calc {
         return sum;
     }
 
-    averageValue(func, min, max, num) {
-        return this.integral(func, min, max, num) / (max - min);
+    averageValue(min, max, func, num) {
+        return this.integral(min, max, func, num) / (max - min);
     }
 
     distance(x1, y1, x2, y2) {
