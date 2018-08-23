@@ -123,17 +123,13 @@ module.exports = class Calc {
 
     integral(min, max, func, num) {
         var sum = 0;
-        var x1 = min;
-        var y1 = func(min);
-        var x2, y2;
         var dx = (max - min) / num;
+        var currentX = min + dx / 2;
         for (var i = 0; i < num; i++) {
-            x2 = x1 + dx;
-            y2 = func(x2);
-            var area = (y1 + y2) * dx / 2;
-            sum += area;
-            x1 = x2;
-            y1 = y2;
+            var currentY = func(currentX);
+
+            sum += dx * currentY;
+            currentX += dx;
         }
         return sum;
     }
