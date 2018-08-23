@@ -84,7 +84,7 @@ Calc.averageValue( start , end , function , numSubintervals );
 ```
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Riemann_sum_%28rightbox%29.gif" width="200px"></img>
 
-Note: As the number of subintervals increases, .intregral() becomes more accurate, though more time is required for calculations
+Note: As the number of subintervals increases, `.integral()` becomes more accurate, though more time is required for calculations
 #### Examples
 ```javascript
 function sin(x) {
