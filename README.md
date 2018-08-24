@@ -39,9 +39,6 @@ Calc.limRightOf(0, recip); // Infinity
 Calc.limAt(0, recip); // NaN
 Calc.limAt(1, recip); // 1
 ```
-
-<iframe src="https://www.desmos.com/calculator/ab0gtivbfd?embed" width="500px" height="250px" frameborder=0></iframe>
-
 ***
 ***
 
@@ -78,12 +75,8 @@ Calc.deriv(1, sharp); // 1
 Calc.nthDeriv(2, 1, para); // 0
 Calc.deriv(0, sharp); // NaN
 ```
-
-<iframe src="https://www.desmos.com/calculator/olfwcgk3r7?embed" width="500px" height="270px" frameborder=0></iframe>
-
 ***
 ***
-
 ## Integrals
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Riemann_sum_%28rightbox%29.gif" width="200px"></img>
 
@@ -102,14 +95,11 @@ function sin(x) {
     return Math.sin(x);
 }
 
-Calc.integral(0, Math.PI, sin, 5); // 1.9337655980928052
-Calc.integral(0, Math.PI, sin, 10); // 1.9835235375094546
-Calc.integral(0, Math.PI, sin, 100); // 1.999835503887445
-Calc.integral(0, Math.PI, sin, 1000); // 1.9999983550656886
-Calc.integral(0, Math.PI, sin, 10000); // 1.999999983550358
+Calc.integral(0, Math.PI, sin, 10); // 2.0082484079079745
+Calc.integral(0, Math.PI, sin, 100); // 2.000082249070989
+Calc.integral(0, Math.PI, sin, 1000); // 2.000000822467294
+Calc.integral(0, Math.PI, sin, 10000); // 2.000000008224376
+Calc.integral(0, Math.PI, sin, 100000); // 2.000000000081865
 ```
-
-<iframe src="https://www.desmos.com/calculator/mtrirg2d6k?embed" width="500px" height="250px" frameborder=0></iframe>
-
 ***
 ***
