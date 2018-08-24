@@ -28,6 +28,7 @@ Calc.limRightOf( x , function );
 * Output **NaN** when the *limit does not exist*
 
 ### Examples:
+
 ```javascript
 function recip(x) {
     return 1 / x;
@@ -38,31 +39,34 @@ Calc.limRightOf(0, recip); // Infinity
 Calc.limAt(0, recip); // NaN
 Calc.limAt(1, recip); // 1
 ```
+<iframe src="https://www.desmos.com/calculator/ab0gtivbfd?embed" width="500px" height="250px" frameborder=0></iframe>
+***
+***
 ***
 ## Derivatives
+<img src="https://www.wikihow.com/images/c/cc/Tangent_animation.gif" width="200px"></img>
+
 Evaluate f'(x)
 * Note: If the given function is not continuous or differentiable at the target, **NaN** is returned
-
 ```javascript
 Calc.deriv( x , function );
 ```
-
 Evaluate a derivative to the nth degree of x
 * Note: as the degree increases, .nthDeriv() becomes **less accurate**. Also, continuity and differentiability are **not checked**.
-
 ```javascript
 Calc.nthDeriv( degree, x , function );
 ```
-<img src="https://www.wikihow.com/images/c/cc/Tangent_animation.gif" width="200px"></img>
+
 ### Examples:
+
 ```javascript
 function para(x) {
     return x * x;
 }
 
-Calc.deriv(3, para); // 6
-Calc.nthDeriv(2, 3, para); // 2
-Calc.nthDeriv(3, 3, para); // 0
+Calc.deriv(2, para); // 4
+Calc.nthDeriv(2, 2, para); // 2
+Calc.nthDeriv(3, 2, para); // 0
 
 function sharp(x) {
     return Math.abs(x);
@@ -72,9 +76,14 @@ Calc.deriv(1, sharp); // 1
 Calc.nthDeriv(2, 1, para); // 0
 Calc.deriv(0, sharp); // NaN
 ```
+<iframe src="https://www.desmos.com/calculator/olfwcgk3r7?embed" width="500px" height="270px" frameborder=0></iframe>
+***
+***
 ***
 ## Integrals
-Evaluate an integral using trapezoidal [Riemann Sums](https://en.wikipedia.org/wiki/Riemann_sum)
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Riemann_sum_%28rightbox%29.gif" width="200px"></img>
+
+Evaluate an integral using midpoint [Riemann Sums](https://en.wikipedia.org/wiki/Riemann_sum)
 ```javascript
 Calc.integral( start , end , function , numSubintervals );
 ```
@@ -82,8 +91,6 @@ Evaluate a function's average value
 ```javascript
 Calc.averageValue( start , end , function , numSubintervals );
 ```
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Riemann_sum_%28rightbox%29.gif" width="200px"></img>
-
 Note: As the number of subintervals increases, .intregral() becomes more accurate, though more time is required for calculations
 #### Examples
 ```javascript
@@ -97,4 +104,7 @@ Calc.integral(0, Math.PI, sin, 100); // 1.999835503887445
 Calc.integral(0, Math.PI, sin, 1000); // 1.9999983550656886
 Calc.integral(0, Math.PI, sin, 10000); // 1.999999983550358
 ```
+<iframe src="https://www.desmos.com/calculator/mtrirg2d6k?embed" width="500px" height="250px" frameborder=0></iframe>
+***
+***
 ***
