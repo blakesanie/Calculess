@@ -39,10 +39,12 @@ Calc.limRightOf(0, recip); // Infinity
 Calc.limAt(0, recip); // NaN
 Calc.limAt(1, recip); // 1
 ```
+
 <iframe src="https://www.desmos.com/calculator/ab0gtivbfd?embed" width="500px" height="250px" frameborder=0></iframe>
+
 ***
 ***
-***
+
 ## Derivatives
 <img src="https://www.wikihow.com/images/c/cc/Tangent_animation.gif" width="200px"></img>
 
@@ -76,10 +78,12 @@ Calc.deriv(1, sharp); // 1
 Calc.nthDeriv(2, 1, para); // 0
 Calc.deriv(0, sharp); // NaN
 ```
+
 <iframe src="https://www.desmos.com/calculator/olfwcgk3r7?embed" width="500px" height="270px" frameborder=0></iframe>
+
 ***
 ***
-***
+
 ## Integrals
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Riemann_sum_%28rightbox%29.gif" width="200px"></img>
 
@@ -104,7 +108,8 @@ Calc.integral(0, Math.PI, sin, 100); // 1.999835503887445
 Calc.integral(0, Math.PI, sin, 1000); // 1.9999983550656886
 Calc.integral(0, Math.PI, sin, 10000); // 1.999999983550358
 ```
+
 <iframe src="https://www.desmos.com/calculator/mtrirg2d6k?embed" width="500px" height="250px" frameborder=0></iframe>
-***
+
 ***
 ***
