@@ -1,7 +1,18 @@
 # Calculess.js
-A calculus library for javascript and NPM. Created by [Blake Sanie](http://www.blakesanie.com).
+A calculus library for javascript. Created by [Blake Sanie](http://www.blakesanie.com).
 # Install
-    $ npm install calculess
+Download using [NPM](https://www.npmjs.com/package/calculess)
+```console
+$ npm install calculess
+```
+Download using [Yarn](https://yarnpkg.com/en/package/calculess)
+```console
+$ yarn add calculess
+```
+Embed using [jsDelivr](https://www.jsdelivr.com/package/npm/calculess)
+```html
+<script src="https://cdn.jsdelivr.net/npm/calculess@1.0.2/lib.js"></script>
+```
 # Getting Started
 Import and initialize package
 ```javascript
@@ -72,7 +83,7 @@ function sharp(x) {
 }
 
 Calc.deriv(1, sharp); // 1
-Calc.nthDeriv(2, 1, para); // 0
+Calc.nthDeriv(2, 1, sharp); // 0
 Calc.deriv(0, sharp); // NaN
 ```
 ***
@@ -89,7 +100,7 @@ Evaluate a function's average value
 Calc.averageValue( start , end , function , numSubintervals );
 ```
 Note: As the number of subintervals increases, .intregral() becomes more accurate, though more time is required for calculations
-#### Examples
+### Examples:
 ```javascript
 function sin(x) {
     return Math.sin(x);
